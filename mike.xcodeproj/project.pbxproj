@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E776A2822AC8C1BB005593B8 /* mikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E776A2812AC8C1BB005593B8 /* mikeApp.swift */; };
-		E776A2842AC8C1BB005593B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E776A2832AC8C1BB005593B8 /* ContentView.swift */; };
 		E776A2862AC8C1BC005593B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E776A2852AC8C1BC005593B8 /* Assets.xcassets */; };
 		E776A2892AC8C1BC005593B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E776A2882AC8C1BC005593B8 /* Preview Assets.xcassets */; };
+		E776A2982AC8CC9F005593B8 /* SimplyCoreAudio in Frameworks */ = {isa = PBXBuildFile; productRef = E776A2972AC8CC9F005593B8 /* SimplyCoreAudio */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7705BD12ADC477C008D8269 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		E776A27E2AC8C1BB005593B8 /* mike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E776A2812AC8C1BB005593B8 /* mikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mikeApp.swift; sourceTree = "<group>"; };
-		E776A2832AC8C1BB005593B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E776A2852AC8C1BC005593B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E776A2882AC8C1BC005593B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E776A28A2AC8C1BC005593B8 /* mike.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mike.entitlements; sourceTree = "<group>"; };
@@ -27,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E776A2982AC8CC9F005593B8 /* SimplyCoreAudio in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +37,7 @@
 		E776A2752AC8C1BB005593B8 = {
 			isa = PBXGroup;
 			children = (
+				E7705BD12ADC477C008D8269 /* readme.md */,
 				E776A2802AC8C1BB005593B8 /* mike */,
 				E776A27F2AC8C1BB005593B8 /* Products */,
 			);
@@ -53,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				E776A2812AC8C1BB005593B8 /* mikeApp.swift */,
-				E776A2832AC8C1BB005593B8 /* ContentView.swift */,
 				E776A2852AC8C1BC005593B8 /* Assets.xcassets */,
 				E776A28A2AC8C1BC005593B8 /* mike.entitlements */,
 				E776A2872AC8C1BC005593B8 /* Preview Content */,
@@ -85,6 +86,9 @@
 			dependencies = (
 			);
 			name = mike;
+			packageProductDependencies = (
+				E776A2972AC8CC9F005593B8 /* SimplyCoreAudio */,
+			);
 			productName = mike;
 			productReference = E776A27E2AC8C1BB005593B8 /* mike.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +117,9 @@
 				Base,
 			);
 			mainGroup = E776A2752AC8C1BB005593B8;
+			packageReferences = (
+				E776A2962AC8CC9F005593B8 /* XCRemoteSwiftPackageReference "SimplyCoreAudio" */,
+			);
 			productRefGroup = E776A27F2AC8C1BB005593B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +146,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E776A2842AC8C1BB005593B8 /* ContentView.swift in Sources */,
 				E776A2822AC8C1BB005593B8 /* mikeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -256,6 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -337,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E776A2962AC8CC9F005593B8 /* XCRemoteSwiftPackageReference "SimplyCoreAudio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rnine/SimplyCoreAudio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E776A2972AC8CC9F005593B8 /* SimplyCoreAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E776A2962AC8CC9F005593B8 /* XCRemoteSwiftPackageReference "SimplyCoreAudio" */;
+			productName = SimplyCoreAudio;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E776A2762AC8C1BB005593B8 /* Project object */;
 }
